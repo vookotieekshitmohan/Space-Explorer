@@ -251,3 +251,42 @@
     }
 
 }
+/* ==========================================
+   Scroll Reveal
+========================================== */
+
+.agency-card,
+.rocket-card,
+.planet-card,
+.gallery-card,
+.stat-card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   Active Navigation
+========================================== */
+
+nav a.active{
+
+    color:#4db8ff;
+
+    border-bottom:2px solid #4db8ff;
+
+    padding-bottom:5px;
+
+}
