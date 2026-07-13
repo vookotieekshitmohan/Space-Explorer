@@ -379,3 +379,62 @@ section{
     font-weight:600;
 
 }
+/* ==========================
+   Statistics
+========================== */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+.stat-card{
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#4db8ff;
+
+    box-shadow:0 0 25px rgba(77,184,255,.3);
+
+}
+
+.stat-card h3{
+
+    font-size:2.5rem;
+
+    color:#4db8ff;
+
+    margin-bottom:15px;
+
+}
+
+.stat-card p{
+
+    color:#d0d0d0;
+
+    line-height:1.6;
+
+}
