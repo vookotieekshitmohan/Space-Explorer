@@ -70,4 +70,4 @@ with assistance from ChatGPT.
 - NASA APIs
 - SpaceX launch information
 - Space weather
-- Astronomy Picture of the Day
+- Astronomy Picture of the day
