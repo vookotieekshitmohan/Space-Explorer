@@ -503,3 +503,58 @@ section{
     line-height:1.7;
 
 }
+/* ==========================
+   Gallery
+========================== */
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.gallery-card{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    transition:.4s;
+
+}
+
+.gallery-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(77,184,255,.3);
+
+}
+
+.gallery-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.gallery-card h3{
+
+    text-align:center;
+
+    padding:20px;
+
+}
