@@ -1,1 +1,212 @@
+/* ==========================================
+   SPACE EXPLORER - ANIMATIONS
+========================================== */
 
+/* ------------------------------
+   Floating Earth
+------------------------------ */
+
+@keyframes floatEarth {
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+.earth{
+
+    animation:floatEarth 6s ease-in-out infinite;
+
+}
+
+
+/* ------------------------------
+   Fade Up Animation
+------------------------------ */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-left,
+.hero-right,
+.agency-card,
+.rocket-card{
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+
+/* ------------------------------
+   Glow Animation
+------------------------------ */
+
+@keyframes glow{
+
+    0%{
+
+        filter:drop-shadow(0 0 10px #4db8ff);
+
+    }
+
+    50%{
+
+        filter:drop-shadow(0 0 30px #4db8ff);
+
+    }
+
+    100%{
+
+        filter:drop-shadow(0 0 10px #4db8ff);
+
+    }
+
+}
+
+.logo i{
+
+    animation:glow 3s infinite;
+
+}
+
+
+/* ------------------------------
+   Button Hover
+------------------------------ */
+
+.btn-primary,
+.btn-secondary{
+
+    transition:.4s;
+
+}
+
+.btn-primary:hover,
+.btn-secondary:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+}
+
+
+/* ------------------------------
+   Card Hover
+------------------------------ */
+
+.agency-card,
+.rocket-card{
+
+    transition:.4s ease;
+
+}
+
+.agency-card:hover,
+.rocket-card:hover{
+
+    transform:translateY(-12px) scale(1.02);
+
+}
+
+
+/* ------------------------------
+   Twinkling Stars
+------------------------------ */
+
+@keyframes twinkle{
+
+    0%{
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:.2;
+
+    }
+
+}
+
+#stars-small,
+#stars-medium,
+#stars-large{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+#stars-small{
+
+    background-image:
+    radial-gradient(2px 2px at 20px 30px,#ffffff,transparent),
+    radial-gradient(2px 2px at 200px 150px,#ffffff,transparent),
+    radial-gradient(2px 2px at 400px 80px,#ffffff,transparent),
+    radial-gradient(2px 2px at 700px 200px,#ffffff,transparent);
+
+    animation:twinkle 4s infinite;
+
+    opacity:.4;
+
+}
+
+#stars-medium{
+
+    background-image:
+    radial-gradient(3px 3px at 120px 300px,#ffffff,transparent),
+    radial-gradient(3px 3px at 600px 120px,#ffffff,transparent),
+    radial-gradient(3px 3px at 900px 500px,#ffffff,transparent);
+
+    animation:twinkle 6s infinite;
+
+    opacity:.3;
+
+}
+
+#stars-large{
+
+    background-image:
+    radial-gradient(4px 4px at 300px 400px,#ffffff,transparent),
+    radial-gradient(4px 4px at 1000px 250px,#ffffff,transparent);
+
+    animation:twinkle 8s infinite;
+
+    opacity:.25;
+
+}
