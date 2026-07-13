@@ -438,3 +438,68 @@ section{
     line-height:1.6;
 
 }
+/* ==========================
+   Solar System
+========================== */
+
+.planet-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+.planet-card{
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.planet-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#4db8ff;
+
+    box-shadow:0 0 30px rgba(77,184,255,.3);
+
+}
+
+.planet-icon{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+}
+
+.planet-card h3{
+
+    margin-bottom:15px;
+
+    color:#4db8ff;
+
+}
+
+.planet-card p{
+
+    color:#d0d0d0;
+
+    line-height:1.7;
+
+}
