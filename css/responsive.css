@@ -1,1 +1,205 @@
+/* ==========================================
+   SPACE EXPLORER
+   Responsive Stylesheet
+========================================== */
 
+/* ===============================
+   Tablets (1024px and below)
+================================ */
+
+@media (max-width:1024px){
+
+    header{
+
+        padding:20px 5%;
+
+    }
+
+    .hero{
+
+        padding:120px 5% 80px;
+
+        gap:40px;
+
+    }
+
+    .hero-left h1{
+
+        font-size:3rem;
+
+    }
+
+    .earth{
+
+        font-size:9rem;
+
+    }
+
+}
+
+/* ===============================
+   Mobile Devices (768px and below)
+================================ */
+
+@media (max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:18px;
+
+    }
+
+    .hero{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+    }
+
+    .hero-left{
+
+        width:100%;
+
+    }
+
+    .hero-right{
+
+        width:100%;
+
+    }
+
+    .hero-left h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .hero-left p{
+
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .earth{
+
+        font-size:8rem;
+
+    }
+
+    .agency-grid,
+    .rocket-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ===============================
+   Small Phones (480px and below)
+================================ */
+
+@media (max-width:480px){
+
+    header{
+
+        padding:15px;
+
+    }
+
+    .logo{
+
+        font-size:1.2rem;
+
+    }
+
+    nav ul{
+
+        gap:12px;
+
+    }
+
+    nav a{
+
+        font-size:.9rem;
+
+    }
+
+    .hero{
+
+        padding:100px 20px 50px;
+
+    }
+
+    .hero-left h4{
+
+        font-size:.9rem;
+
+    }
+
+    .hero-left h1{
+
+        font-size:2rem;
+
+    }
+
+    .hero-left p{
+
+        font-size:.95rem;
+
+        line-height:1.7;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+
+        text-align:center;
+
+        padding:15px;
+
+    }
+
+    .earth{
+
+        font-size:6rem;
+
+    }
+
+    .section-heading h2{
+
+        font-size:2rem;
+
+    }
+
+    .agency-card,
+    .rocket-card{
+
+        padding:25px;
+
+    }
+
+}
