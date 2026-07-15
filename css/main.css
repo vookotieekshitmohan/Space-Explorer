@@ -519,6 +519,44 @@ section{
     line-height:1.7;
 
 }
+
+/* Orbit Rings */
+
+.orbit{
+    position:absolute;
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.mercury-orbit{width:120px;height:120px;}
+.venus-orbit{width:170px;height:170px;}
+.earth-orbit{width:230px;height:230px;}
+.mars-orbit{width:290px;height:290px;}
+.jupiter-orbit{width:370px;height:370px;}
+.saturn-orbit{width:460px;height:460px;}
+.uranus-orbit{width:560px;height:560px;}
+.neptune-orbit{width:650px;height:650px;}
+
+@keyframes floatPlanet{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+.planet{
+    animation:floatPlanet 3s ease-in-out infinite;
+}
+
+
 /* ==========================
    Gallery
 ========================== */
