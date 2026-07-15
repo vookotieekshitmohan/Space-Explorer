@@ -875,3 +875,121 @@ footer p{
     color:#ddd;
     line-height:1.6;
 }
+
+/* =========================
+   SOLAR SYSTEM
+========================= */
+
+.solar-system{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.solar-container{
+    position:relative;
+    width:700px;
+    height:700px;
+    margin:60px auto;
+}
+
+.sun{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:90px;
+    height:90px;
+    background:#ffcc33;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    box-shadow:0 0 60px #ffcc33;
+}
+
+.planet{
+    position:absolute;
+    border-radius:50%;
+    transition:.3s;
+}
+
+.planet:hover{
+    transform:scale(1.4);
+}
+
+/* Mercury */
+
+.mercury{
+    width:12px;
+    height:12px;
+    background:#999;
+    top:50%;
+    left:58%;
+}
+
+/* Venus */
+
+.venus{
+    width:18px;
+    height:18px;
+    background:#d9a066;
+    top:50%;
+    left:63%;
+}
+
+/* Earth */
+
+.earth-planet{
+    width:20px;
+    height:20px;
+    background:#2b8cff;
+    top:50%;
+    left:69%;
+}
+
+/* Mars */
+
+.mars{
+    width:16px;
+    height:16px;
+    background:#d75c37;
+    top:50%;
+    left:75%;
+}
+
+/* Jupiter */
+
+.jupiter{
+    width:40px;
+    height:40px;
+    background:#d8b08c;
+    top:48%;
+    left:82%;
+}
+
+/* Saturn */
+
+.saturn{
+    width:36px;
+    height:36px;
+    background:#e6d39b;
+    top:54%;
+    left:88%;
+}
+
+/* Uranus */
+
+.uranus{
+    width:28px;
+    height:28px;
+    background:#8be0ff;
+    top:42%;
+    left:92%;
+}
+
+/* Neptune */
+
+.neptune{
+    width:26px;
+    height:26px;
+    background:#4466ff;
+    top:60%;
+    left:96%;
+}
