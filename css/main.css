@@ -27,22 +27,44 @@ body{
 }
 
 /* =========================
-   Background
+   SPACE BACKGROUND
 ========================= */
 
+body{
+    background:#020412;
+}
+
+/* Deep space gradient */
 body::before{
-
     content:"";
-
     position:fixed;
-
     inset:0;
-
     background:
-    radial-gradient(circle at top,#16213e 0%,#050816 45%,#000000 100%);
+        radial-gradient(circle at top,#1a2f5a 0%,#081221 40%,#020412 100%);
+    z-index:-5;
+}
 
-    z-index:-3;
+/* Nebula */
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(0,140,255,.12), transparent 30%),
+        radial-gradient(circle at 80% 20%, rgba(180,0,255,.10), transparent 35%),
+        radial-gradient(circle at 60% 75%, rgba(0,255,180,.08), transparent 30%);
+    filter:blur(40px);
+    animation:nebulaMove 25s ease-in-out infinite alternate;
+    z-index:-4;
+}
 
+@keyframes nebulaMove{
+    from{
+        transform:scale(1) translate(0,0);
+    }
+    to{
+        transform:scale(1.15) translate(30px,-20px);
+    }
 }
 
 /* =========================
