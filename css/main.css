@@ -260,10 +260,6 @@ nav a:hover{
 .earth{
     width:320px;
     height:320px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    animation:rotateEarth 30s linear infinite;
 }
 
 .earth img{
@@ -272,6 +268,17 @@ nav a:hover{
     object-fit:cover;
     border-radius:50%;
     box-shadow:0 0 60px rgba(0,170,255,.6);
+    animation: rotateEarth 20s linear infinite;
+    transform-origin:center;
+}
+
+@keyframes rotateEarth{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
 }
 
 @keyframes rotateEarth{
