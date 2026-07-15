@@ -786,3 +786,51 @@ footer p{
     padding: 20px;
     color: white;
 }
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline{
+    padding:100px 8%;
+}
+
+.timeline-container{
+    max-width:900px;
+    margin:auto;
+    border-left:3px solid #00bfff;
+    padding-left:30px;
+}
+
+.timeline-item{
+    margin-bottom:50px;
+    position:relative;
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-40px;
+    top:5px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#00bfff;
+    box-shadow:0 0 15px #00bfff;
+}
+
+.timeline-item span{
+    color:#00bfff;
+    font-weight:700;
+    font-size:1.1rem;
+}
+
+.timeline-item h3{
+    margin:10px 0;
+    color:#fff;
+}
+
+.timeline-item p{
+    color:#ccc;
+    line-height:1.7;
+}
