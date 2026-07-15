@@ -259,7 +259,6 @@ nav a:hover{
     display:flex;
     justify-content:center;
     align-items:center;
-    animation:rotateEarth 20s linear infinite;
 }
 
 .earth img{
@@ -269,6 +268,9 @@ nav a:hover{
     border-radius:50%;
     display:block;
     filter:drop-shadow(0 0 15px rgba(0,170,255,.5));
+
+    animation: rotateEarth 20s linear infinite;
+    transform-origin:center center;
 }
 
 @keyframes rotateEarth{
@@ -279,7 +281,6 @@ nav a:hover{
         transform:rotate(360deg);
     }
 }
-
 /* =========================
    Sections
 ========================= */
