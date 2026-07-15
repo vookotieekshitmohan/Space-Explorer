@@ -265,7 +265,7 @@ nav a:hover{
     object-fit:contain;
     border-radius:50%;
     background:transparent;
-    box-shadow:0 0 60px rgba(0,170,255,.6);
+    box-shadow:0 0 25px rgba(0,170,255,.4);
 }
 
 @keyframes rotateEarth{
@@ -429,7 +429,7 @@ section{
 
     border-color:#4db8ff;
 
-    box-shadow:0 0 25px rgba(77,184,255,.3);
+    box-shadow:0 0 30px rgba(77,184,255,.3);
 
 }
 
