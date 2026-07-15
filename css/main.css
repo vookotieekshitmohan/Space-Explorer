@@ -258,11 +258,29 @@ nav a:hover{
 }
 
 .earth{
+    width:320px;
+    height:320px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    animation:rotateEarth 30s linear infinite;
+}
 
-    font-size:12rem;
+.earth img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+    box-shadow:0 0 60px rgba(0,170,255,.6);
+}
 
-    filter:drop-shadow(0 0 40px #4db8ff);
-
+@keyframes rotateEarth{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
 }
 
 /* =========================
