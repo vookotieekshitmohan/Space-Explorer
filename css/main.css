@@ -260,8 +260,8 @@ nav a:hover{
 }
 
 .earth img{
-    width:200%;
-    height:200%;
+    width:160%;
+    height:160%;
     object-fit:contain;
     border-radius:50%;
     background:transparent;
