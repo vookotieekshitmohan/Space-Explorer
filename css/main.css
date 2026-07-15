@@ -270,6 +270,8 @@ nav a:hover{
     box-shadow:0 0 60px rgba(0,170,255,.6);
     animation: rotateEarth 20s linear infinite;
     transform-origin:center;
+   display: block;
+mix-blend-mode: screen;
 }
 
 @keyframes rotateEarth{
