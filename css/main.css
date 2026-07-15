@@ -191,19 +191,6 @@ nav ul li a:hover::after{
 
     line-height:1.1;
 
-}
-
-.hero-left h1{
-
-    font-size:4rem;
-
-    margin-bottom:20px;
-
-    line-height:1.1;
-
-}
-
-/* Add this here */
 
 .hero-title{
 
@@ -214,12 +201,12 @@ nav ul li a:hover::after{
         #ffffff
     );
 
-    background-size:300%;
+    background-size:400%;
 
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 
-    animation:shine 5s linear infinite;
+    animation:shine 4s linear infinite;
 }
 
 @keyframes shine{
