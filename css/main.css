@@ -193,6 +193,47 @@ nav ul li a:hover::after{
 
 }
 
+.hero-left h1{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+    line-height:1.1;
+
+}
+
+/* Add this here */
+
+.hero-title{
+
+    background:linear-gradient(
+        90deg,
+        #ffffff,
+        #7fd7ff,
+        #ffffff
+    );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    animation:shine 5s linear infinite;
+}
+
+@keyframes shine{
+
+    0%{
+        background-position:0%;
+    }
+
+    100%{
+        background-position:300%;
+    }
+
+}
+
 .hero-left p{
 
     color:#d0d0d0;
