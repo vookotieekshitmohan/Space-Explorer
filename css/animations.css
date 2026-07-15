@@ -290,3 +290,47 @@ nav a.active{
     padding-bottom:5px;
 
 }
+
+/* =========================
+   SHOOTING STARS
+========================= */
+
+.shooting-star{
+    position:fixed;
+    top:-100px;
+    left:-100px;
+    width:3px;
+    height:120px;
+    background:linear-gradient(transparent, white);
+    transform:rotate(45deg);
+    opacity:.8;
+    pointer-events:none;
+    z-index:-1;
+    animation:shoot 8s linear infinite;
+}
+
+.shooting-star2{
+    animation-delay:3s;
+    left:20%;
+}
+
+.shooting-star3{
+    animation-delay:6s;
+    left:70%;
+}
+
+@keyframes shoot{
+    0%{
+        transform:translate(-200px,-200px) rotate(45deg);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translate(1800px,1200px) rotate(45deg);
+        opacity:0;
+    }
+}
