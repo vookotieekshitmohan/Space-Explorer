@@ -291,46 +291,89 @@ nav a.active{
 
 }
 
-/* =========================
+/* =====================
    SHOOTING STARS
-========================= */
+==================== */
 
 .shooting-star{
-    position:fixed;
-    top:-100px;
-    left:-100px;
-    width:3px;
-    height:120px;
-    background:linear-gradient(transparent, white);
-    transform:rotate(45deg);
-    opacity:.8;
+    position: fixed;
+    top: -150px;
+    left: -150px;
+    width: 2px;
+    height: 180px;
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0),
+        rgba(255,255,255,0.2),
+        rgba(255,255,255,0.8),
+        white
+    );
+    border-radius:50px;
+    transform: rotate(45deg);
+    filter: drop-shadow(0 0 12px white);
     pointer-events:none;
     z-index:-1;
-    animation:shoot 8s linear infinite;
+    animation: meteor1 12s linear infinite;
 }
 
 .shooting-star2{
-    animation-delay:3s;
-    left:20%;
+    animation: meteor2 16s linear infinite;
 }
 
 .shooting-star3{
-    animation-delay:6s;
-    left:70%;
+    animation: meteor3 20s linear infinite;
 }
 
-@keyframes shoot{
-    0%{
-        transform:translate(-200px,-200px) rotate(45deg);
-        opacity:0;
-    }
+@keyframes meteor1{
 
-    10%{
-        opacity:1;
-    }
+0%{
+opacity:0;
+transform:translate(-300px,-300px) rotate(45deg);
+}
 
-    100%{
-        transform:translate(1800px,1200px) rotate(45deg);
-        opacity:0;
-    }
+5%{
+opacity:1;
+}
+
+100%{
+opacity:0;
+transform:translate(2200px,1400px) rotate(45deg);
+}
+
+}
+
+@keyframes meteor2{
+
+0%{
+opacity:0;
+transform:translate(1600px,-400px) rotate(135deg);
+}
+
+8%{
+opacity:1;
+}
+
+100%{
+opacity:0;
+transform:translate(-1200px,1600px) rotate(135deg);
+}
+
+}
+
+@keyframes meteor3{
+
+0%{
+opacity:0;
+transform:translate(-400px,100px) rotate(35deg);
+}
+
+10%{
+opacity:1;
+}
+
+100%{
+opacity:0;
+transform:translate(1800px,900px) rotate(35deg);
+}
+
 }
