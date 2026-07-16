@@ -203,3 +203,38 @@
     }
 
 }
+/* =========================
+   SOLAR SYSTEM RESPONSIVE
+========================= */
+
+@media (max-width: 768px){
+
+    .solar-container{
+
+        width:320px;
+        height:320px;
+
+    }
+
+    .sun{
+
+        width:50px;
+        height:50px;
+
+    }
+
+    .orbit{
+
+        transform:translate(-50%,-50%) scale(.45);
+
+        transform-origin:center;
+
+    }
+
+    .planet{
+
+        transform:scale(.7);
+
+    }
+
+}
