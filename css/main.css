@@ -1275,3 +1275,31 @@ body{
     font-weight:700;
 
 }
+
+/* =========================
+   NASA Hero Logo
+========================= */
+
+.agency-logo{
+    width:320px;
+    max-width:100%;
+    animation:floatLogo 5s ease-in-out infinite;
+    filter:drop-shadow(0 0 25px #4db8ff);
+}
+
+@keyframes floatLogo{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
