@@ -457,6 +457,100 @@ section{
     transform:translateY(-10px) scale(1.05);
 }
 
+/* =========================
+   Rocket Cards
+========================= */
+
+.rocket-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+    margin-top:50px;
+}
+
+.rocket-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:30px 20px;
+    text-align:center;
+    transition:all .4s ease;
+    overflow:hidden;
+    position:relative;
+}
+
+.rocket-card img{
+    width:140px;
+    height:220px;
+    object-fit:contain;
+    transition:transform .5s ease;
+}
+
+.rocket-card h3{
+    margin-top:20px;
+    margin-bottom:10px;
+    font-size:1.5rem;
+}
+
+.rocket-card p{
+    color:#cfd8dc;
+    line-height:1.6;
+}
+
+/* Hover Effect */
+
+.rocket-card:hover{
+    transform:translateY(-15px);
+    border-color:#4db8ff;
+    box-shadow:0 20px 40px rgba(0,170,255,.35);
+}
+
+.rocket-card:hover img{
+    transform:translateY(-25px) scale(1.12);
+}
+
+.rocket-card::before{
+    content:"";
+    position:absolute;
+    left:-120%;
+    top:0;
+    width:70%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+    transition:.8s;
+}
+
+.rocket-card:hover::before{
+    left:140%;
+}
+
+.rocket-card img{
+    animation:rocketFloat 4s ease-in-out infinite;
+}
+
+@keyframes rocketFloat{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+
 /* ==========================
    Statistics
 ========================== */
