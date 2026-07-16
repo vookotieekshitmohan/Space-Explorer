@@ -299,6 +299,7 @@ nav ul li a:hover::after{
     width:40%;
     display:flex;
     justify-content:center;
+    align-items:center;
 }
 
 .earth{
