@@ -443,6 +443,20 @@ section{
     font-weight:600;
 
 }
+
+.rocket-card img{
+    width:140px;
+    height:180px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto 20px;
+    transition:0.4s;
+}
+
+.rocket-card:hover img{
+    transform:translateY(-10px) scale(1.05);
+}
+
 /* ==========================
    Statistics
 ========================== */
