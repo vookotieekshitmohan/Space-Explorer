@@ -1,240 +1,248 @@
 /* ==========================================
    SPACE EXPLORER
-   Responsive Stylesheet
-========================================== */
+   Responsive v2.0
+==========================================*/
 
-/* ===============================
-   Tablets (1024px and below)
-================================ */
 
-@media (max-width:1024px){
+/*==========================================
+ Large Tablets & Small Laptops
+==========================================*/
 
-    header{
+@media (max-width:1200px){
 
-        padding:20px 5%;
+header{
+    padding:18px 6%;
+}
 
-    }
+.hero{
+    padding:110px 6% 70px;
+    gap:50px;
+}
 
-    .hero{
+.hero-left{
+    width:55%;
+}
 
-        padding:120px 5% 80px;
+.hero-right{
+    width:45%;
+}
 
-        gap:40px;
+.hero-left h1{
+    font-size:clamp(2.8rem,5vw,3.8rem);
+}
 
-    }
+.hero-left p{
+    font-size:1rem;
+}
 
-    .hero-left h1{
-
-        font-size:3rem;
-
-    }
-
-    .earth{
-
-        font-size:9rem;
-
-    }
+.earth{
+    width:280px;
+    height:280px;
+}
 
 }
 
-/* ===============================
-   Mobile Devices (768px and below)
-================================ */
+
+/*==========================================
+ Tablets
+==========================================*/
+
+@media (max-width:992px){
+
+header{
+
+    padding:18px 5%;
+    flex-wrap:wrap;
+
+}
+
+nav ul{
+
+    gap:20px;
+
+}
+
+.hero{
+
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:50px;
+
+}
+
+.hero-left,
+.hero-right{
+
+    width:100%;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+.hero-left h1{
+
+    font-size:3rem;
+
+}
+
+.hero-left p{
+
+    max-width:650px;
+    margin:auto;
+    margin-bottom:35px;
+
+}
+
+.earth{
+
+    width:260px;
+    height:260px;
+
+}
+
+}
+
+
+/*==========================================
+ Mobile
+==========================================*/
 
 @media (max-width:768px){
 
-    header{
+header{
 
-        flex-direction:column;
-
-        gap:20px;
-
-    }
-
-    nav ul{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:18px;
-
-    }
-
-    .hero{
-
-        flex-direction:column-reverse;
-
-        text-align:center;
-
-    }
-
-    .hero-left{
-
-        width:100%;
-
-    }
-
-    .hero-right{
-
-        width:100%;
-
-    }
-
-    .hero-left h1{
-
-        font-size:2.5rem;
-
-    }
-
-    .hero-left p{
-
-        font-size:1rem;
-
-    }
-
-    .hero-buttons{
-
-        justify-content:center;
-
-        flex-wrap:wrap;
-
-    }
-
-    .earth{
-
-        font-size:8rem;
-
-    }
-
-    .agency-grid,
-    .rocket-grid{
-
-        grid-template-columns:1fr;
-
-    }
+    padding:15px 20px;
+    flex-direction:column;
+    gap:18px;
 
 }
 
-/* ===============================
-   Small Phones (480px and below)
-================================ */
+.logo{
+
+    font-size:1.3rem;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+
+}
+
+nav a{
+
+    font-size:.95rem;
+
+}
+
+.hero{
+
+    padding:100px 20px 60px;
+    min-height:auto;
+
+}
+
+.hero-left h4{
+
+    font-size:.9rem;
+
+}
+
+.hero-left h1{
+
+    font-size:2.3rem;
+    line-height:1.2;
+
+}
+
+.hero-left p{
+
+    font-size:.95rem;
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    align-items:center;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+    width:220px;
+
+}
+
+.earth{
+
+    width:220px;
+    height:220px;
+
+}
+
+}
+
+
+/*==========================================
+ Small Phones
+==========================================*/
 
 @media (max-width:480px){
 
-    header{
+.hero{
 
-        padding:15px;
-
-    }
-
-    .logo{
-
-        font-size:1.2rem;
-
-    }
-
-    nav ul{
-
-        gap:12px;
-
-    }
-
-    nav a{
-
-        font-size:.9rem;
-
-    }
-
-    .hero{
-
-        padding:100px 20px 50px;
-
-    }
-
-    .hero-left h4{
-
-        font-size:.9rem;
-
-    }
-
-    .hero-left h1{
-
-        font-size:2rem;
-
-    }
-
-    .hero-left p{
-
-        font-size:.95rem;
-
-        line-height:1.7;
-
-    }
-
-    .btn-primary,
-    .btn-secondary{
-
-        width:100%;
-
-        text-align:center;
-
-        padding:15px;
-
-    }
-
-    .earth{
-
-        font-size:6rem;
-
-    }
-
-    .section-heading h2{
-
-        font-size:2rem;
-
-    }
-
-    .agency-card,
-    .rocket-card{
-
-        padding:25px;
-
-    }
+    padding:90px 15px 50px;
 
 }
-/* =========================
-   SOLAR SYSTEM RESPONSIVE
-========================= */
 
-@media (max-width: 768px){
+.hero-left h1{
 
-    .solar-container{
+    font-size:2rem;
 
-        width:320px;
-        height:320px;
+}
 
-    }
+.hero-left p{
 
-    .sun{
+    font-size:.92rem;
 
-        width:50px;
-        height:50px;
+}
 
-    }
+.logo{
 
-    .orbit{
+    font-size:1.1rem;
 
-        transform:translate(-50%,-50%) scale(.45);
+}
 
-        transform-origin:center;
+.btn-primary,
+.btn-secondary{
 
-    }
+    width:100%;
 
-    .planet{
+}
 
-        transform:scale(.7);
+.earth{
 
-    }
+    width:180px;
+    height:180px;
+
+}
+
+.section-heading h2{
+
+    font-size:2rem;
+
+}
 
 }
