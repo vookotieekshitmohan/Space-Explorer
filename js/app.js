@@ -121,22 +121,22 @@ function revealOnScroll(){
 
 }
 
+/* ==========================================
+   Custom Cursor
+========================================== */
+
 const cursor = document.querySelector(".cursor");
 const blur = document.querySelector(".cursor-blur");
 
-if (cursor && blur && window.matchMedia("(pointer: fine)").matches) {
+if (cursor && blur) {
 
     document.addEventListener("mousemove", (e) => {
 
-        cursor.style.transform =
-            `translate(${e.clientX}px, ${e.clientY}px)`;
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
 
-        blur.animate({
-            transform: `translate(${e.clientX}px, ${e.clientY}px)`
-        }, {
-            duration: 250,
-            fill: "forwards"
-        });
+        blur.style.left = e.clientX + "px";
+        blur.style.top = e.clientY + "px";
 
     });
 
