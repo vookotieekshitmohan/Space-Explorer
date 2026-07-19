@@ -124,41 +124,24 @@ function revealOnScroll(){
 const cursor = document.querySelector(".cursor");
 const blur = document.querySelector(".cursor-blur");
 
-document.addEventListener("mousemove", (e) => {
+if (cursor && blur && window.matchMedia("(pointer: fine)").matches) {
 
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
+    document.addEventListener("mousemove", (e) => {
 
-    blur.style.left = e.clientX + "px";
-    blur.style.top = e.clientY + "px";
+        cursor.style.transform =
+            `translate(${e.clientX}px, ${e.clientY}px)`;
 
-});
+        blur.animate({
+            transform: `translate(${e.clientX}px, ${e.clientY}px)`
+        }, {
+            duration: 250,
+            fill: "forwards"
+        });
 
-const counters = document.querySelectorAll(".counter");
+    });
 
-counters.forEach(counter => {
+} else {
 
-    const update = () => {
+    document.body.style.cursor = "auto";
 
-        const target = +counter.dataset.target;
-        const current = +counter.innerText;
-
-        const increment = target / 120;
-
-        if(current < target){
-
-            counter.innerText = Math.ceil(current + increment);
-
-            setTimeout(update,20);
-
-        }else{
-
-            counter.innerText = target.toLocaleString();
-
-        }
-
-    };
-
-    update();
-
-});
+}
