@@ -142,6 +142,6 @@ if (cursor && blur) {
 
 } else {
 
-    document.body.style.cursor = "auto";
+    document.body.style.cursor = "none";
 
 }
