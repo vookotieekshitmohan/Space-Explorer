@@ -1198,27 +1198,25 @@ body{
 }
 
 .cursor{
-    position:fixed;
-    width:10px;
-    height:10px;
-    background:#00bfff;
-    border-radius:50%;
-    pointer-events:none;
-    z-index:9999;
-    transform:translate(-50%,-50%);
-    transition:transform .08s linear;
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    background: #4fdcff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999999;
+    transform: translate(-50%, -50%);
 }
-
 .cursor-blur{
-    position:fixed;
-    width:40px;
-    height:40px;
-    background:rgba(0,191,255,.2);
-    border-radius:50%;
-    pointer-events:none;
-    z-index:9998;
-    transform:translate(-50%,-50%);
-    filter:blur(10px);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: rgba(79,220,255,.25);
+    border-radius: 50%;
+    filter: blur(12px);
+    pointer-events: none;
+    z-index: 999998;
+    transform: translate(-50%, -50%);
 }
 
 /* =========================
