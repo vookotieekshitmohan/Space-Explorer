@@ -1199,8 +1199,8 @@ body{
 
 .cursor{
     position: fixed;
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
     background: #4fdcff;
     border-radius: 50%;
     pointer-events: none;
